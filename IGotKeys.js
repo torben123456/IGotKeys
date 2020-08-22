@@ -1,16 +1,18 @@
 alert('hello world');
 console.log('test');
 
-const script = document.createElement("script")
- script.type = "text/javascript"
-script.src = "https://code.jquery.com/jquery-3.5.1.slim.js"
-			  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-			  crossorigin="anonymous"
-  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
-  crossorigin="anonymous"
-document.head.appendChild(script)
+(function() {
+    // Load the script
+    var script = document.createElement("SCRIPT");
+    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+    script.type = 'text/javascript';
+    script.onload = function() {
+        var $ = window.jQuery;
+        // Use $ here...
+    };
+    document.getElementsByTagName("head")[0].appendChild(script);
+})();
 
-eval(script)
 
 console.log('jquery loaded')
 
@@ -19,5 +21,8 @@ console.log('jquery loaded')
 
  var code = e.keyCode || e.which;
  if(code == 13) { 
- 	alert('enter');
+ 	alert('test');
  }
+   
+   
+   
