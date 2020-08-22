@@ -8,7 +8,7 @@ To load into browser copy following into your browser console (to open browser c
 
 const script = document.createElement("script")
  script.type = "text/javascript"
-script.src = "https://ghcdn.rawgit.org/torben123456/IGotKeys/master/IGotKeys.js"
+script.src = "https://githubraw.com/torben123456/IGotKeys/master/IGotKeys.js"
   integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
   crossorigin="anonymous"
 document.head.appendChild(script)
@@ -16,5 +16,6 @@ document.head.appendChild(script)
 eval(script)
 
 ----
+
 
 
