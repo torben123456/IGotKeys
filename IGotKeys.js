@@ -1,3 +1,6 @@
+alert('hello world');
+console.log('test');
+
 const script = document.createElement("script")
  script.type = "text/javascript"
 script.src = "https://code.jquery.com/jquery-3.5.1.slim.js"
